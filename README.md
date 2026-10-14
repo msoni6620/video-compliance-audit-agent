@@ -8,7 +8,7 @@ Built with **LangGraph**, **Azure OpenAI**, **Azure AI Search**, **Azure Video I
 
 ## Demo
 
-![Streamlit UI](docs/images/01-streamlit-ui.png)
+![Streamlit UI](docs/image/01-streamlit-ui.png)
 
 *The Streamlit interface: paste a YouTube link, run the audit, and read the compliance report (status, summary, and findings).*
 
@@ -46,7 +46,7 @@ If video processing fails (for example, no transcript is produced), the graph sk
 
 Two models are deployed in Azure AI Foundry: a chat model for the audit reasoning and an embedding model for the policy knowledge base.
 
-![Azure OpenAI deployments](docs/images/02-azure-openai-deployments.png)
+![Azure OpenAI deployments](docs/image/02-azure-openai-deployments.png)
 
 | Purpose | Model |
 |---|---|
@@ -59,11 +59,11 @@ Two models are deployed in Azure AI Foundry: a chat model for the audit reasonin
 
 The FastAPI backend is instrumented with OpenTelemetry and sends telemetry to Azure Application Insights, including request traces, dependency calls, and failures.
 
-![Application Insights](docs/images/03-application-insights.png)
+![Application Insights](docs/image/03-application-insights.png)
 
 The **Application Map** shows how the app talks to its Azure dependencies (Video Indexer, Storage, AI Search, and Azure OpenAI):
 
-![Application Map](docs/images/04-application-map.png)
+![Application Map](docs/image/04-application-map.png)
 
 ---
 
